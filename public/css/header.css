@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.header {
+	padding: 30px 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	gap: 20px;
+	box-shadow: 2px 2px 2px solid grey;
+	margin-bottom: 5vh;
+	border: 0;
+}
+
+.header-links:link {
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.header-links:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.header-links:hover {
+	color: black;
+	background-color: rgba(0,0,0,0.04);
+	display: inline-block;
+}
+.header .logo {
+	color: yellow;
+}
+
+.logo a {
+	color: #00aa50;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.account {
+  background-color: #415a68;
+  padding: 7px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px solid #415a68;
+}
+
+.account a {
+	color: white;
+	text-decoration: none;
+}
+
+
+#search input {
+	padding: 3px 3px 0px 0px;
+	padding-left: 5px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+
+#search input::focus {
+	webkit-outline: none;
+}

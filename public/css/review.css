@@ -1,0 +1,44 @@
+.correct {
+	border: 0.5px solid #00aa70;
+}
+
+.wrong {
+	border: 0.5px solid #dc3545;
+}
+
+.correct-remark {
+
+}
+
+.wrong-remark {
+
+}
+.back {
+	
+}
+.back:link {
+	color: black;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+.back img {
+	margin: auto auto;
+	display: inline-block;
+	text-align: top;
+}
+.back:visited {
+
+}
+
+.back:hover {
+	background-color: #eeeeee;
+	padding: 5px;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: width 1s;
+}
+
+.back:active {
+
+}

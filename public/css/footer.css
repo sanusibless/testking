@@ -1,0 +1,80 @@
+/* Footer Styles */
+* {
+	font-family: sans-serif;
+}
+footer {
+	background-color: #282d32;
+	color: #FFFFFF;
+	padding: 50px 100px;
+}
+.footer-links {
+	display: flex;
+}
+
+.footer-links > div {
+	width: 50%;
+}
+
+.h3 {
+	color: #00aa50;
+	opacity: 0.8;
+}
+
+.footer-links-inner {
+	display: flex;
+	gap: 100px;
+}
+
+.footer-links-inner ul {
+	list-style: none;
+	padding-top: 10px;
+}
+.footer-links-inner ul li {
+	margin-bottom: 5px;
+}
+.footer-links-inner ul li a {
+	text-decoration: none;
+	color: white;
+	opacity: 0.6;
+}
+
+.footer-links-inner ul li a:hover {
+	text-decoration: none;
+	color: white;
+	opacity: 0.8;
+}
+
+.footer-info h3 {
+	padding-bottom: 10px;
+}
+
+.footer-info p {
+	opacity: 0.6;
+}
+.social-links {
+	width: 30%;
+	margin: auto;
+	padding-top: 20px;
+}
+.social-links ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	gap: 4px;
+}
+
+.social-links ul li a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  color: white;
+  line-height: 36px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.patent {
+	opacity: 0.3;
+	text-align: center;
+	padding-top: 30px;
+}
