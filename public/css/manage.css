@@ -16,7 +16,6 @@
 
 .form-group {
 	width: 70%;
-	margin: auto;
 	text-align: center;
 	margin-bottom: 3vh;
 	display: flex;
@@ -42,10 +41,6 @@
 .form-group input:focus {
 	outline: none;
 }
-.form-submit {
-	margin: auto;
-	width: 70%;
-}
 
 .forgot-password {
 	width: 70%;
@@ -61,14 +56,17 @@
 	text-decoration: underline;
 }
 
+.form-submit {
+	text-align: center;
+	width: 70%;
+}
+
 .form-submit button {
 	background-color: #00aa70;
 	padding: 10px 10px;
 	border-radius: 5px;
 	border: none;
 	color: #ffffff;
-	display: block;
-	width: 100%;
 }
 
 .form-submit button:hover {
