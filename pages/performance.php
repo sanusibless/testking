@@ -15,17 +15,22 @@
 					<table class="table">
 						<thead>
 							<tr>
-								<th> S/N</th>
-							<th>Test</th>
-							<th>Batch ID</th>
-							<td>Mode</td>
-							<td>Category</td>
-							<th>Action</th>
+								<th>S/N</th>
+								<th>Test</th>
+								<th>Batch ID</th>
+								<td>Mode</td>
+								<td>Category</td>
+								<th>Action</th>
 							</tr>
 						</thead>
 						<tbody id="result">
 						</tbody>
 					</table>
+				</div>
+				<div id="overlay-index">
+					<div class="cv-spinner">
+						<span class="spinner"></span>
+					</div>
 				</div>
 			</div>
 		</div>

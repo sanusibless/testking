@@ -1,6 +1,8 @@
 <?php
 session_start(); 
-require_once '../src/functions.php' ?>
+require_once '../src/functions.php';
+?>
+
 <?php view('home/header',[
 	'title' => "TestKing - Home",
 	'links' => ['header','footer','home']
@@ -56,7 +58,6 @@ require_once '../src/functions.php' ?>
 	  		</div>
 		</div>
 		<div class="samples">
-
 		</div>
 	</div>
 	</div>

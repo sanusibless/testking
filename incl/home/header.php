@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,7 @@
 	<?php } } ?>
 </head>
 <body>
-	<header class="header">
+<header class="header">
 		<div class="logo">
 			<a href="index.php">
 				TestKing

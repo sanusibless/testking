@@ -5,8 +5,6 @@
   });
 
 const categoryLinks = Array.from(document.querySelectorAll(".category-link"));
-console.log('im');
-console.log(categoryLinks);
 
 categoryLinks.forEach( categoryLink => {
 	categoryLink.addEventListener('click', (event) => {

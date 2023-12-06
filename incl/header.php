@@ -1,3 +1,10 @@
+<?php ob_start(); ?>
+<?php include("init.php"); 
+
+if(!isset($_SESSION['user'])) {
+	header("location: ../pages/login.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

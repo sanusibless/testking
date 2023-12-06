@@ -24,37 +24,33 @@
 					From here, you can manage your account details including login details
 				</p>
 				<div>
-						<form class="form-section">
-							<input type="hidden" name="userID" value="<?=$user['id']?>">
-						<div class="form-group">
-							<label>First Name</label>
-							<input type="text" name="first_name" value="<?=$user['first_name']?>">
-						</div>
-						<div class="form-group">
-							<label>Last Name</label>
-								<input type="text" name="last_name" value="<?=$user['last_name'] ?>">
-						</div>
-						<div class="form-group">
-							<label>Email</label>
-								<input type="email" name="email" value="<?=$user['email'] ?>">
-						</div>
-						<div class="form-group">
-							<label>Password</label>
-							<input class="password" type="password" name="password" value="<?=$user['password'] ?>">
-							<?php if(isset($_SESSION['error']['register']) && gettype($_SESSION['error']['register']) === 'array') {
-								foreach ($_SESSION['error']['register'] as $value) { ?>
-									<p> <?php echo "$value" ?> </p>
-							<?php } } else { ?>
-								<p> <?php echo $_SESSION['error']['register'] ?? "" ?> </p>
-							<?php } ?>
-						</div>
-						<div class="form-group">
-							<label>Confirm Password</label>
-							<input class="password" type="password" name="confirm_password" value="<?=$user['password'] ?>">
-						</div>
-						<div class="form-submit">
-							<button>Save Changes</button>
-						</div>
+						<form class="form-section" id="updateForm" action="../api/update_user.php" method="POST">
+							<div class="form-group">
+								<label>First Name</label>
+								<input type="text" name="first_name" value="<?=$user['first_name']?>">
+							</div>
+							<div class="form-group">
+								<label>Last Name</label>
+									<input type="text" name="last_name" value="<?=$user['last_name'] ?>">
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+									<input type="email" name="email" value="<?=$user['email'] ?>" disabled />
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input class="password" type="password" name="password" value="<?=$user['password'] ?>">
+								<?php if(isset($_SESSION['update']['error']['password'])): ?>
+									<p> <?php echo $_SESSION['update']['error']['password'] ?? "" ?> </p>
+								<?php endif; ?>
+							</div>
+							<div class="form-group">
+								<label>Confirm Password</label>
+								<input class="password" type="password" name="confirm_password" value="<?=$user['password'] ?>">
+							</div>
+							<div class="form-submit">
+								<button>Save Changes</button>
+							</div>
 					</form>
 				</div>
 			</div>

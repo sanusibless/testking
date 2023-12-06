@@ -1,18 +1,16 @@
 <?php
 	session_start();
+	ob_start();
 	require_once '../src/functions.php'; 
 
-	if(!isset($_SESSION['user'])) {
-		header('location: ./login.php');
-	}
-?>
-<?php 
-$filePath = basename($_SERVER['PHP_SELF']);
-$file = explode('.', $filePath)[0];
-view('header',[
-	'title' => "TestKing - Home",
-	'links' => ['footer','dashboard', $file]
-]);
+	$filePath = basename($_SERVER['PHP_SELF']);
+	
+	$file = explode('.', $filePath)[0];
+
+	view('header',[
+		'title' => "TestKing - Home",
+		'links' => ['footer','dashboard', $file]
+	]);
 
 ?>
 <section class="dashboard">

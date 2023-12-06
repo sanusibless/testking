@@ -1,7 +1,15 @@
 document.addEventListener("DOMContentLoaded", (event) => {
 	$.ajax({
 		url: '../api/records.php',
+		beforeSend: () => {
+			console.log("loading");
+			$("#overlay-index").css({
+				marginTop: '20px'
+			})
+			$("#overlay-index").show('fast');
+		},
 		success: (resp) => {
+			$("#overlay-index").hide();
 			let data = JSON.parse(resp);
 			console.log(data)
 			let dataHTML = data.map( (datum,index) => {
