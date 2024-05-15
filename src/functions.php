@@ -3,7 +3,7 @@
 		foreach ($array as $key => $value) {
 			$$key = $value;
 		}
-		include_once '../incl/' . $file . '.php';
+		include_once 'incl/' . $file . '.php';
 	}
 
 	function sanitize($string) {

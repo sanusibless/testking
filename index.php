@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-require_once '../src/functions.php';
+require_once 'src/functions.php';
 ?>
 
 <?php view('home/header',[
@@ -45,7 +45,7 @@ require_once '../src/functions.php';
 						<div class="popular-items">
 							<div class="items-text"><a class="category-link" href="?category=<?= $r['code'] ?>"><?= $r['name'] ?></a></div>
 							<div>
-								<img src="../public/images/popular/work.webp">
+								<img src="public/images/popular/work.webp">
 							</div>
 						</div>	
 				<?php endforeach; ?>			
